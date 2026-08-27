@@ -1,0 +1,1133 @@
+{
+  "all_local_module_count": 190,
+  "all_local_module_order": [
+    "O3.Geometry",
+    "O3.Foundation",
+    "V7.Foundation",
+    "V7.PositiveModel",
+    "V7.Guards",
+    "V7.TrialInterfaces",
+    "V7.EuclideanStatements",
+    "V7.BelowTwoStatements",
+    "V7.AboveTwoStatements",
+    "V7.ControllerStatements",
+    "O3.Oracle",
+    "O3.Anchor",
+    "O3.Stage2RouteB",
+    "O3.Stage2RouteC",
+    "O3.GeometryExperimental",
+    "O3.Stage2RouteD",
+    "O3.Stage3AnchorNorming",
+    "V7.Proofs.Shared",
+    "O3.Stage3Descent",
+    "V7.Proofs.GuardAdapters",
+    "O3.Stage3Anchor",
+    "V7.Proofs.Anchor",
+    "O3.Euclidean",
+    "O3.Stage8EuclideanWeights",
+    "O3.Stage8EuclideanMinimizer",
+    "O3.Stage8EuclideanPhase",
+    "O3.Stage8EuclideanRadius",
+    "O3.Stage8EuclideanGap",
+    "O3.Stage9Theta",
+    "O3.Stage9Telescoping",
+    "O3.Stage9Execution",
+    "O3.Stage9Certificate",
+    "O3.Stage9Pairing",
+    "O3.Stage9FiniteDataOGMG",
+    "V7.Proofs.Euclidean",
+    "O3.Stage10EuclideanGuards",
+    "V7.Proofs.Stage1E03.Machine",
+    "V7.Proofs.Stage1E03.Ledger",
+    "V7.Proofs.Stage1E03.SourceData",
+    "V7.Proofs.Stage1E03.Refinement",
+    "V7.Proofs.Stage1E03.Shapes",
+    "V7.Proofs.Stage1E03.Correctness",
+    "V7.Proofs.Stage1E03.Semantics",
+    "V7.Proofs.Stage1E03.AnalyticBridge",
+    "V7.Proofs.Stage1E03.Certificate",
+    "V7.Proofs.Stage1E03.Proof",
+    "V7.Proofs.Stage1E03",
+    "V7.Proofs.Stage1AxiomAudit",
+    "V7.Proofs.Stage2.GuardSoundness",
+    "V7.Proofs.Stage2.Geometric",
+    "V7.Proofs.Stage2.PathShape",
+    "V7.Proofs.Stage2.Controller",
+    "V7.Proofs.Stage2Resume.Positivity",
+    "V7.Proofs.Stage2Resume.Transport",
+    "V7.Proofs.Stage2Resume.Amortization",
+    "V7.Proofs.Stage2Resume.Closure",
+    "O3.Stage2RouteA",
+    "O3.Stage2BelowGeometry",
+    "V7.Proofs.Stage3BelowTwo.Geometry",
+    "V7.Proofs.Stage3BelowTwo.Primal",
+    "V7.Proofs.Stage3BelowTwo.Identity",
+    "V7.Proofs.Stage3BelowTwo.Dual",
+    "V7.Proofs.Stage3BelowTwoResumeS3E.GuardScaling",
+    "V7.Proofs.Stage3BelowTwoResumeS3E.Closure",
+    "V7.Proofs.Stage3BelowTwoS3F.Coefficients",
+    "V7.Proofs.Stage3BelowTwoS3F.PrimalTrajectory",
+    "V7.Proofs.Stage3BelowTwoS3F.DualTrajectory",
+    "V7.Proofs.Stage3BelowTwoS3F.Machine",
+    "V7.Proofs.Stage3BelowTwoS3F.Shapes",
+    "V7.Proofs.Stage3BelowTwoS3F.Semantics",
+    "V7.Proofs.Stage3BelowTwoS3F.Ledger",
+    "V7.Proofs.Stage3BelowTwoS3F.Normalization",
+    "V7.Proofs.Stage3BelowTwoS3F.AnalyticBridge",
+    "V7.Proofs.Stage3BelowTwoS3F.Certificate",
+    "V7.Proofs.Stage3BelowTwoS3F.Contract",
+    "V7.Proofs.Stage3BelowTwoS3F.Bounds",
+    "V7.Proofs.Stage3BelowTwoS3F.Proof",
+    "V7.Proofs.Stage3BelowTwoS3F.Closure",
+    "V7.Proofs.Stage4AboveTwo.Geometry",
+    "V7.Proofs.Stage4AboveTwo.Constants",
+    "V7.Proofs.Stage4AboveTwo.WeightBalance",
+    "V7.Proofs.Stage4AboveTwo.Identity",
+    "V7.Proofs.Stage4AboveTwo.PrimalResidual",
+    "V7.Proofs.Stage4AboveTwo.PartialClosure",
+    "V7.Proofs.Stage4AboveTwoPrimalRepair.PrimalEnergy",
+    "V7.Proofs.Stage4AboveTwoPrimalRepair.Closure",
+    "V7.Proofs.Stage4AboveTwoDualPhase.DualEnergy",
+    "V7.Proofs.Stage4AboveTwoDualPhase.PhaseBounds",
+    "V7.Proofs.Stage4AboveTwoDualPhase.AnalyticPrefix",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Coefficients",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Trajectory",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Machine",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Shapes",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Semantics",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Ledger",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Contract",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.AnalyticBridge",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Certificate",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Bounds",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Proof",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Closure",
+    "V7.StrictModel",
+    "V7.LowerBoundStatements",
+    "V7.Proofs.Stage5AboveTwoLower.LocalityBridge",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.InfimalLocality",
+    "V7.Proofs.Stage5AboveTwoLower.Parameters",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.Parameters",
+    "V7.Proofs.Stage5AboveTwoLower.KernelElementary",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelLineCalculus",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientNonzero",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientHessian",
+    "V7.Proofs.Stage5AboveTwoLowerS5AFinalRepair.OriginFrechet",
+    "V7.Proofs.Stage5AboveTwoLowerS5AHessianContinuity.HessianContinuity",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Core",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Continuity",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Calculus",
+    "V7.Proofs.Stage5AboveTwoLowerResume.InfimalAttainment",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PrimalOptimality",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelConvexity",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeSupport",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ConditionalSmoothness",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelHessianStructure",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelCocoercivity",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.QuadraticBound",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.DimensionControl",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeDerivative",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelAssembly",
+    "V7.Proofs.Stage5AboveTwoLowerResume.InfimalLocalityClosure",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Closure",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryLinearization",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryClassification",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryEquivariance",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Construction",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ExactPairCompletion",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.QueryGap",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OutsideGradient",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.BaseGradient",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OptimizerRadius",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PhysicalLower",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixState",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixSync",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.CompletionData",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.ObjectiveData",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.CompletedTrace",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalScaling",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalAnalytic",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UnitInstance",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.RateAlgebra",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.LowerTheorem",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.LocalTrialAdapter",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperAnalytic",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTrial",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTheorem",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Optimality",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Closure",
+    "V7.StrictStatements",
+    "V7.Proofs.Stage6StrictDeterministic.AffineTrace",
+    "V7.Proofs.Stage6StrictDeterministic.HSelection",
+    "V7.Proofs.Stage6StrictDeterministic.ScalarHard",
+    "V7.Proofs.Stage6StrictDeterministic.HardInstance",
+    "V7.Proofs.Stage6StrictDeterministic.Indistinguishability",
+    "V7.Proofs.Stage6StrictDeterministic.Closure",
+    "V7.Proofs.Stage7StrictRandomizedExpected.MeasurableTrace",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Displacement",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Randomized",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Expected",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Transfer",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Closure",
+    "V7.Proofs.Stage8Main.LocalDispatch",
+    "O3.Stage12AAnchorMachine",
+    "O3.AboveTwo",
+    "O3.Stage11Amortization",
+    "O3.BelowTwo",
+    "O3.Stage4AlgebraRadius",
+    "O3.Stage11RConditionBar",
+    "V7.Proofs.Stage8Main.RuntimeMachine",
+    "V7.Proofs.Stage8Main.LocalSpec",
+    "O3.Controller",
+    "V7.Proofs.Stage8Main.Controller",
+    "V7.Proofs.Stage8Main.Refinement",
+    "V7.Proofs.Stage8Main.AnchorSplice",
+    "V7.Proofs.Stage8Main.History",
+    "V7.Proofs.Stage8Main.Accounting",
+    "V7.Proofs.Stage8Main.MainExecution",
+    "V7.MainStatement",
+    "V7.Proofs.Stage8Main.Main",
+    "V7.Proofs.Stage8Main.Closure",
+    "V7.Proofs.Stage8Main.AxiomAudit",
+    "V7.Proofs.Stage8Main.WholePaperAudit",
+    "V7"
+  ],
+  "local_import_edges": {
+    "O3.AboveTwo": [
+      "O3.Foundation"
+    ],
+    "O3.Anchor": [
+      "O3.Oracle"
+    ],
+    "O3.BelowTwo": [
+      "O3.Foundation"
+    ],
+    "O3.Controller": [
+      "O3.Oracle"
+    ],
+    "O3.Euclidean": [
+      "O3.Oracle"
+    ],
+    "O3.Foundation": [
+      "O3.Geometry"
+    ],
+    "O3.Geometry": [],
+    "O3.GeometryExperimental": [
+      "O3.Geometry"
+    ],
+    "O3.Oracle": [
+      "O3.Foundation"
+    ],
+    "O3.Stage10EuclideanGuards": [
+      "O3.Stage8EuclideanGap",
+      "O3.Stage9FiniteDataOGMG"
+    ],
+    "O3.Stage11Amortization": [
+      "O3.AboveTwo"
+    ],
+    "O3.Stage11RConditionBar": [
+      "O3.Stage11Amortization",
+      "O3.Stage4AlgebraRadius",
+      "O3.Stage3Anchor"
+    ],
+    "O3.Stage12AAnchorMachine": [
+      "O3.Stage3Anchor"
+    ],
+    "O3.Stage2BelowGeometry": [
+      "O3.Stage2RouteA",
+      "O3.Stage2RouteB"
+    ],
+    "O3.Stage2RouteA": [
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "O3.Stage2RouteB": [
+      "O3.Geometry"
+    ],
+    "O3.Stage2RouteC": [
+      "O3.Geometry"
+    ],
+    "O3.Stage2RouteD": [
+      "O3.GeometryExperimental"
+    ],
+    "O3.Stage3Anchor": [
+      "O3.Stage3Descent"
+    ],
+    "O3.Stage3AnchorNorming": [
+      "O3.Anchor",
+      "O3.Stage2RouteB",
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "O3.Stage3Descent": [
+      "O3.Stage3AnchorNorming"
+    ],
+    "O3.Stage4AlgebraRadius": [
+      "O3.BelowTwo",
+      "O3.Stage2RouteC"
+    ],
+    "O3.Stage8EuclideanGap": [
+      "O3.Stage8EuclideanPhase",
+      "O3.Stage8EuclideanRadius"
+    ],
+    "O3.Stage8EuclideanMinimizer": [
+      "O3.Foundation",
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "O3.Stage8EuclideanPhase": [
+      "O3.Stage8EuclideanWeights",
+      "O3.Stage8EuclideanMinimizer",
+      "O3.Stage3Anchor",
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "O3.Stage8EuclideanRadius": [
+      "O3.Foundation",
+      "O3.Stage2RouteC"
+    ],
+    "O3.Stage8EuclideanWeights": [
+      "O3.Euclidean"
+    ],
+    "O3.Stage9Certificate": [
+      "O3.Stage9Theta"
+    ],
+    "O3.Stage9Execution": [
+      "O3.Stage9Theta",
+      "O3.Stage9Telescoping",
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "O3.Stage9FiniteDataOGMG": [
+      "O3.Stage9Execution",
+      "O3.Stage9Pairing",
+      "O3.Stage9Certificate"
+    ],
+    "O3.Stage9Pairing": [
+      "O3.Stage9Theta",
+      "O3.Stage9Telescoping",
+      "O3.Stage9Certificate"
+    ],
+    "O3.Stage9Telescoping": [
+      "O3.Foundation",
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "O3.Stage9Theta": [
+      "O3.Euclidean"
+    ],
+    "V7": [
+      "V7.Foundation",
+      "V7.PositiveModel",
+      "V7.StrictModel",
+      "V7.Guards",
+      "V7.TrialInterfaces",
+      "V7.StrictStatements",
+      "V7.BelowTwoStatements",
+      "V7.EuclideanStatements",
+      "V7.AboveTwoStatements",
+      "V7.LowerBoundStatements",
+      "V7.ControllerStatements",
+      "V7.MainStatement"
+    ],
+    "V7.AboveTwoStatements": [
+      "V7.BelowTwoStatements"
+    ],
+    "V7.BelowTwoStatements": [
+      "V7.TrialInterfaces"
+    ],
+    "V7.ControllerStatements": [
+      "V7.EuclideanStatements",
+      "V7.AboveTwoStatements"
+    ],
+    "V7.EuclideanStatements": [
+      "V7.TrialInterfaces"
+    ],
+    "V7.Foundation": [
+      "O3.Foundation"
+    ],
+    "V7.Guards": [
+      "V7.PositiveModel"
+    ],
+    "V7.LowerBoundStatements": [
+      "V7.AboveTwoStatements",
+      "V7.StrictModel"
+    ],
+    "V7.MainStatement": [
+      "V7.StrictStatements",
+      "V7.LowerBoundStatements",
+      "V7.ControllerStatements"
+    ],
+    "V7.PositiveModel": [
+      "V7.Foundation"
+    ],
+    "V7.Proofs.Anchor": [
+      "V7.Proofs.GuardAdapters",
+      "O3.Stage3Anchor"
+    ],
+    "V7.Proofs.Euclidean": [
+      "V7.Proofs.Anchor",
+      "O3.Stage8EuclideanGap",
+      "O3.Stage9FiniteDataOGMG"
+    ],
+    "V7.Proofs.GuardAdapters": [
+      "V7.Proofs.Shared",
+      "O3.Stage3Descent"
+    ],
+    "V7.Proofs.Shared": [
+      "V7.ControllerStatements",
+      "O3.Stage3AnchorNorming"
+    ],
+    "V7.Proofs.Stage1AxiomAudit": [
+      "V7.Proofs.Euclidean"
+    ],
+    "V7.Proofs.Stage1E03": [
+      "V7.Proofs.Stage1E03.Proof"
+    ],
+    "V7.Proofs.Stage1E03.AnalyticBridge": [
+      "V7.Proofs.Stage1E03.Semantics"
+    ],
+    "V7.Proofs.Stage1E03.Certificate": [
+      "V7.Proofs.Stage1E03.AnalyticBridge"
+    ],
+    "V7.Proofs.Stage1E03.Correctness": [
+      "V7.Proofs.Stage1E03.Shapes"
+    ],
+    "V7.Proofs.Stage1E03.Ledger": [
+      "V7.Proofs.Stage1E03.Machine"
+    ],
+    "V7.Proofs.Stage1E03.Machine": [
+      "V7.Proofs.Euclidean",
+      "O3.Stage10EuclideanGuards"
+    ],
+    "V7.Proofs.Stage1E03.Proof": [
+      "V7.Proofs.Stage1E03.Certificate"
+    ],
+    "V7.Proofs.Stage1E03.Refinement": [
+      "V7.Proofs.Stage1E03.SourceData"
+    ],
+    "V7.Proofs.Stage1E03.Semantics": [
+      "V7.Proofs.Stage1E03.Correctness"
+    ],
+    "V7.Proofs.Stage1E03.Shapes": [
+      "V7.Proofs.Stage1E03.Refinement"
+    ],
+    "V7.Proofs.Stage1E03.SourceData": [
+      "V7.Proofs.Stage1E03.Ledger"
+    ],
+    "V7.Proofs.Stage2.Controller": [
+      "V7.Proofs.Stage2.PathShape"
+    ],
+    "V7.Proofs.Stage2.Geometric": [
+      "V7.Proofs.Stage2.GuardSoundness"
+    ],
+    "V7.Proofs.Stage2.GuardSoundness": [
+      "V7.Proofs.Stage1E03"
+    ],
+    "V7.Proofs.Stage2.PathShape": [
+      "V7.Proofs.Stage2.Geometric"
+    ],
+    "V7.Proofs.Stage2Resume.Amortization": [
+      "V7.Proofs.Stage2Resume.Transport"
+    ],
+    "V7.Proofs.Stage2Resume.Closure": [
+      "V7.Proofs.Stage1E03",
+      "V7.Proofs.Stage2Resume.Amortization"
+    ],
+    "V7.Proofs.Stage2Resume.Positivity": [
+      "V7.Proofs.Stage2.Controller"
+    ],
+    "V7.Proofs.Stage2Resume.Transport": [
+      "V7.Proofs.Stage2Resume.Positivity"
+    ],
+    "V7.Proofs.Stage3BelowTwo.Dual": [
+      "V7.Proofs.Stage3BelowTwo.Identity"
+    ],
+    "V7.Proofs.Stage3BelowTwo.Geometry": [
+      "V7.Proofs.Shared",
+      "O3.Stage2BelowGeometry"
+    ],
+    "V7.Proofs.Stage3BelowTwo.Identity": [
+      "V7.Proofs.Stage3BelowTwo.Primal"
+    ],
+    "V7.Proofs.Stage3BelowTwo.Primal": [
+      "V7.Proofs.Stage3BelowTwo.Geometry",
+      "O3.Stage3Descent"
+    ],
+    "V7.Proofs.Stage3BelowTwoResumeS3E.Closure": [
+      "V7.Proofs.Stage2Resume.Closure",
+      "V7.Proofs.Stage3BelowTwoResumeS3E.GuardScaling"
+    ],
+    "V7.Proofs.Stage3BelowTwoResumeS3E.GuardScaling": [
+      "V7.Proofs.Stage3BelowTwo.Dual"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.AnalyticBridge": [
+      "V7.Proofs.Stage3BelowTwoS3F.Normalization"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Bounds": [
+      "V7.Proofs.Stage3BelowTwoS3F.Contract"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Certificate": [
+      "V7.Proofs.Stage3BelowTwoS3F.AnalyticBridge",
+      "V7.Proofs.Stage2.GuardSoundness"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Closure": [
+      "V7.Proofs.Stage3BelowTwoResumeS3E.Closure",
+      "V7.Proofs.Stage3BelowTwoS3F.Proof"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Coefficients": [
+      "V7.Proofs.Stage3BelowTwoResumeS3E.GuardScaling"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Contract": [
+      "V7.Proofs.Stage3BelowTwoS3F.Certificate"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.DualTrajectory": [
+      "V7.Proofs.Stage3BelowTwoS3F.PrimalTrajectory"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Ledger": [
+      "V7.Proofs.Stage3BelowTwoS3F.Semantics"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Machine": [
+      "V7.Proofs.Stage3BelowTwoS3F.DualTrajectory"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Normalization": [
+      "V7.Proofs.Stage3BelowTwoS3F.Ledger"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.PrimalTrajectory": [
+      "V7.Proofs.Stage3BelowTwoS3F.Coefficients"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Proof": [
+      "V7.Proofs.Stage3BelowTwoS3F.Bounds"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Semantics": [
+      "V7.Proofs.Stage3BelowTwoS3F.Shapes"
+    ],
+    "V7.Proofs.Stage3BelowTwoS3F.Shapes": [
+      "V7.Proofs.Stage3BelowTwoS3F.Machine"
+    ],
+    "V7.Proofs.Stage4AboveTwo.Constants": [
+      "V7.Proofs.Stage4AboveTwo.Geometry"
+    ],
+    "V7.Proofs.Stage4AboveTwo.Geometry": [
+      "V7.AboveTwoStatements",
+      "O3.GeometryExperimental",
+      "O3.Stage2RouteB"
+    ],
+    "V7.Proofs.Stage4AboveTwo.Identity": [
+      "V7.Proofs.Stage4AboveTwo.WeightBalance",
+      "O3.Stage2RouteC",
+      "O3.Stage2RouteD"
+    ],
+    "V7.Proofs.Stage4AboveTwo.PartialClosure": [
+      "V7.Proofs.Stage4AboveTwo.PrimalResidual"
+    ],
+    "V7.Proofs.Stage4AboveTwo.PrimalResidual": [
+      "V7.Proofs.Stage4AboveTwo.Identity"
+    ],
+    "V7.Proofs.Stage4AboveTwo.WeightBalance": [
+      "V7.Proofs.Stage4AboveTwo.Constants"
+    ],
+    "V7.Proofs.Stage4AboveTwoDualPhase.AnalyticPrefix": [
+      "V7.Proofs.Stage4AboveTwoDualPhase.PhaseBounds"
+    ],
+    "V7.Proofs.Stage4AboveTwoDualPhase.DualEnergy": [
+      "V7.Proofs.Stage4AboveTwoPrimalRepair.Closure",
+      "O3.Stage3Descent"
+    ],
+    "V7.Proofs.Stage4AboveTwoDualPhase.PhaseBounds": [
+      "V7.Proofs.Stage4AboveTwoDualPhase.DualEnergy"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.AnalyticBridge": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Contract",
+      "V7.Proofs.Stage3BelowTwoS3F.AnalyticBridge"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Bounds": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Certificate"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Certificate": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.AnalyticBridge",
+      "V7.Proofs.Stage2.GuardSoundness"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Closure": [
+      "V7.Proofs.Stage3BelowTwoS3F.Closure",
+      "V7.Proofs.Stage4AboveTwoDualPhase.AnalyticPrefix",
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Proof"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Coefficients": [
+      "V7.Proofs.Stage4AboveTwoDualPhase.AnalyticPrefix",
+      "V7.Proofs.Stage3BelowTwoS3F.Machine"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Contract": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Ledger"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Ledger": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Semantics",
+      "V7.Proofs.Stage3BelowTwoS3F.Ledger"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Machine": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Trajectory"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Proof": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Bounds"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Semantics": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Shapes"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Shapes": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Machine"
+    ],
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Trajectory": [
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Coefficients"
+    ],
+    "V7.Proofs.Stage4AboveTwoPrimalRepair.Closure": [
+      "V7.Proofs.Stage4AboveTwo.PartialClosure",
+      "V7.Proofs.Stage4AboveTwoPrimalRepair.PrimalEnergy"
+    ],
+    "V7.Proofs.Stage4AboveTwoPrimalRepair.PrimalEnergy": [
+      "V7.Proofs.Stage4AboveTwo.PrimalResidual",
+      "O3.Stage3Descent"
+    ],
+    "V7.Proofs.Stage5AboveTwoLower.KernelElementary": [
+      "V7.Proofs.Stage5AboveTwoLower.Parameters",
+      "O3.GeometryExperimental"
+    ],
+    "V7.Proofs.Stage5AboveTwoLower.LocalityBridge": [
+      "V7.LowerBoundStatements"
+    ],
+    "V7.Proofs.Stage5AboveTwoLower.Parameters": [
+      "V7.LowerBoundStatements"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerResume.InfimalAttainment": [
+      "V7.Proofs.Stage5AboveTwoLowerS5ARepair.InfimalLocality",
+      "V7.Proofs.Stage5AboveTwoLowerS5AFinalRepair.OriginFrechet",
+      "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Calculus"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerResume.InfimalLocalityClosure": [
+      "V7.Proofs.Stage5AboveTwoLowerResume.InfimalAttainment"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.BaseGradient": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OutsideGradient"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Closure": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelAssembly",
+      "V7.Proofs.Stage5AboveTwoLowerResume.InfimalLocalityClosure"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ConditionalSmoothness": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeSupport"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Construction": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryEquivariance"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.DimensionControl": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelCocoercivity",
+      "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.QuadraticBound"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeDerivative": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.DimensionControl"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeSupport": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelConvexity"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ExactPairCompletion": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Construction"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelAssembly": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeDerivative"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelCocoercivity": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelHessianStructure",
+      "V7.Proofs.Shared"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelConvexity": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PrimalOptimality"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelHessianStructure": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ConditionalSmoothness"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OptimizerRadius": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.BaseGradient"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OutsideGradient": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.QueryGap"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PhysicalLower": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OptimizerRadius"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PrimalOptimality": [
+      "V7.Proofs.Stage5AboveTwoLowerResume.InfimalAttainment",
+      "O3.Stage3Descent"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.QueryGap": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ExactPairCompletion"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryClassification": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryLinearization"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryEquivariance": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryClassification"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryLinearization": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Closure"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5AFinalRepair.OriginFrechet": [
+      "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientHessian",
+      "O3.Stage2RouteB",
+      "O3.Stage2RouteC"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Calculus": [
+      "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Continuity"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Continuity": [
+      "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Core"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Core": [
+      "V7.Proofs.Stage5AboveTwoLowerS5AHessianContinuity.HessianContinuity",
+      "O3.Stage2RouteD"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.QuadraticBound": [
+      "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Calculus"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5AHessianContinuity.HessianContinuity": [
+      "V7.Proofs.Stage5AboveTwoLowerS5AFinalRepair.OriginFrechet"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.InfimalLocality": [
+      "V7.Proofs.Stage5AboveTwoLower.LocalityBridge",
+      "O3.Stage2RouteC"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientHessian": [
+      "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientNonzero"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientNonzero": [
+      "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelLineCalculus"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelLineCalculus": [
+      "V7.Proofs.Stage5AboveTwoLowerS5ARepair.Parameters",
+      "V7.Proofs.Stage5AboveTwoLower.KernelElementary",
+      "O3.Stage2RouteA"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.Parameters": [
+      "V7.Proofs.Stage5AboveTwoLower.Parameters"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Closure": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.Optimality"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.CompletedTrace": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.ObjectiveData"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.CompletionData": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixSync"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.LocalTrialAdapter": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.LowerTheorem"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.LowerTheorem": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.RateAlgebra"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.ObjectiveData": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.CompletionData"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Optimality": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTheorem"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalAnalytic": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalScaling"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalScaling": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.CompletedTrace"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixState": [
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PhysicalLower"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixSync": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixState"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.RateAlgebra": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.UnitInstance"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UnitInstance": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalAnalytic"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperAnalytic": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.LocalTrialAdapter",
+      "V7.Proofs.Stage3BelowTwoS3F.AnalyticBridge",
+      "V7.Proofs.Stage1E03.Semantics"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTheorem": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTrial"
+    ],
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTrial": [
+      "V7.Proofs.Stage5AboveTwoLowerS5F.UpperAnalytic",
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Proof"
+    ],
+    "V7.Proofs.Stage6StrictDeterministic.AffineTrace": [
+      "V7.StrictStatements"
+    ],
+    "V7.Proofs.Stage6StrictDeterministic.Closure": [
+      "V7.Proofs.Stage6StrictDeterministic.Indistinguishability"
+    ],
+    "V7.Proofs.Stage6StrictDeterministic.HSelection": [
+      "V7.Proofs.Stage6StrictDeterministic.AffineTrace"
+    ],
+    "V7.Proofs.Stage6StrictDeterministic.HardInstance": [
+      "V7.Proofs.Stage6StrictDeterministic.ScalarHard"
+    ],
+    "V7.Proofs.Stage6StrictDeterministic.Indistinguishability": [
+      "V7.Proofs.Stage6StrictDeterministic.HardInstance"
+    ],
+    "V7.Proofs.Stage6StrictDeterministic.ScalarHard": [
+      "V7.Proofs.Stage6StrictDeterministic.HSelection"
+    ],
+    "V7.Proofs.Stage7StrictRandomizedExpected.Closure": [
+      "V7.Proofs.Stage7StrictRandomizedExpected.Transfer"
+    ],
+    "V7.Proofs.Stage7StrictRandomizedExpected.Displacement": [
+      "V7.Proofs.Stage7StrictRandomizedExpected.MeasurableTrace"
+    ],
+    "V7.Proofs.Stage7StrictRandomizedExpected.Expected": [
+      "V7.Proofs.Stage7StrictRandomizedExpected.Randomized"
+    ],
+    "V7.Proofs.Stage7StrictRandomizedExpected.MeasurableTrace": [
+      "V7.Proofs.Stage6StrictDeterministic.Closure"
+    ],
+    "V7.Proofs.Stage7StrictRandomizedExpected.Randomized": [
+      "V7.Proofs.Stage7StrictRandomizedExpected.Displacement"
+    ],
+    "V7.Proofs.Stage7StrictRandomizedExpected.Transfer": [
+      "V7.Proofs.Stage7StrictRandomizedExpected.Expected"
+    ],
+    "V7.Proofs.Stage8Main.Accounting": [
+      "V7.Proofs.Stage8Main.History"
+    ],
+    "V7.Proofs.Stage8Main.AnchorSplice": [
+      "V7.Proofs.Stage8Main.Refinement",
+      "V7.Proofs.Anchor"
+    ],
+    "V7.Proofs.Stage8Main.AxiomAudit": [
+      "V7.Proofs.Stage8Main.Closure"
+    ],
+    "V7.Proofs.Stage8Main.Closure": [
+      "V7.Proofs.Stage8Main.Main"
+    ],
+    "V7.Proofs.Stage8Main.Controller": [
+      "V7.Proofs.Stage8Main.LocalSpec",
+      "O3.Controller",
+      "O3.Stage4AlgebraRadius"
+    ],
+    "V7.Proofs.Stage8Main.History": [
+      "V7.Proofs.Stage8Main.AnchorSplice",
+      "V7.Proofs.Stage2Resume.Amortization"
+    ],
+    "V7.Proofs.Stage8Main.LocalDispatch": [
+      "V7.Proofs.Stage1E03.Proof",
+      "V7.Proofs.Stage3BelowTwoS3F.Proof",
+      "V7.Proofs.Stage4AboveTwoFinalTrial.Proof",
+      "V7.Proofs.Stage2Resume.Closure"
+    ],
+    "V7.Proofs.Stage8Main.LocalSpec": [
+      "V7.Proofs.Stage8Main.RuntimeMachine"
+    ],
+    "V7.Proofs.Stage8Main.Main": [
+      "V7.Proofs.Stage8Main.MainExecution",
+      "V7.MainStatement"
+    ],
+    "V7.Proofs.Stage8Main.MainExecution": [
+      "V7.Proofs.Stage8Main.Accounting"
+    ],
+    "V7.Proofs.Stage8Main.Refinement": [
+      "V7.Proofs.Stage8Main.Controller"
+    ],
+    "V7.Proofs.Stage8Main.RuntimeMachine": [
+      "V7.Proofs.Stage8Main.LocalDispatch",
+      "O3.Stage12AAnchorMachine",
+      "O3.Stage11RConditionBar"
+    ],
+    "V7.Proofs.Stage8Main.WholePaperAudit": [
+      "V7.Proofs.Stage8Main.Main",
+      "V7.Proofs.Stage7StrictRandomizedExpected.Closure",
+      "V7.Proofs.Stage5AboveTwoLowerS5F.Optimality",
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ExactPairCompletion",
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.QueryGap",
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OutsideGradient",
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.BaseGradient",
+      "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OptimizerRadius"
+    ],
+    "V7.StrictModel": [
+      "V7.Foundation"
+    ],
+    "V7.StrictStatements": [
+      "V7.StrictModel"
+    ],
+    "V7.TrialInterfaces": [
+      "V7.Guards"
+    ]
+  },
+  "mathematical_certification_commit": "eb1b55d448496dca56a87001e4d792c483e057ce",
+  "negative_sentinels": [
+    {
+      "forbidden_modules": [
+        "O3.Stage4BelowEstimate"
+      ],
+      "id": "LEGACY-BELOW-ESTIMATE",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.belowEstimate"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage5BelowTrial"
+      ],
+      "id": "LEGACY-BELOW-TRIAL",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.belowTrial"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage12BBelowMachine"
+      ],
+      "id": "LEGACY-BELOW-MACHINE",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.Stage12BBelowMachine.*"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage6AbovePhase"
+      ],
+      "id": "LEGACY-ABOVE-PHASE",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.abovePhase"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage7AboveTrial"
+      ],
+      "id": "LEGACY-ABOVE-TRIAL",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.aboveTrial"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage12BAboveMachine"
+      ],
+      "id": "LEGACY-ABOVE-MACHINE",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.Stage12BAboveMachine.*"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage11GuardedController",
+        "O3.Stage11ControllerAccounting",
+        "O3.Stage12COuterController"
+      ],
+      "id": "LEGACY-CONTROLLER",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.guardedController"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Main"
+      ],
+      "id": "LEGACY-MAINSTATEMENT",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.MainStatement"
+      ],
+      "status": "ABSENT"
+    },
+    {
+      "forbidden_modules": [
+        "O3.Stage12COuterController"
+      ],
+      "id": "LEGACY-MAIN",
+      "modules_present": [],
+      "obsolete_declarations": [
+        "O3.main",
+        "O3.o3MethodFamily"
+      ],
+      "status": "ABSENT"
+    }
+  ],
+  "negative_sentinels_absent": true,
+  "o3_load_bearing_module_count": 33,
+  "proof_roots": [
+    "V7.Proofs.Stage1E03",
+    "V7.Proofs.Stage1AxiomAudit",
+    "V7.Proofs.Stage2Resume.Closure",
+    "V7.Proofs.Stage3BelowTwoS3F.Closure",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Closure",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Closure",
+    "V7.Proofs.Stage6StrictDeterministic.Closure",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Closure",
+    "V7.Proofs.Stage8Main.Closure",
+    "V7.Proofs.Stage8Main.AxiomAudit",
+    "V7.Proofs.Stage8Main.WholePaperAudit"
+  ],
+  "schema_version": 1,
+  "v7_proof_module_count": 144,
+  "v7_proof_module_order": [
+    "V7.Proofs.Shared",
+    "V7.Proofs.GuardAdapters",
+    "V7.Proofs.Anchor",
+    "V7.Proofs.Euclidean",
+    "V7.Proofs.Stage1E03.Machine",
+    "V7.Proofs.Stage1E03.Ledger",
+    "V7.Proofs.Stage1E03.SourceData",
+    "V7.Proofs.Stage1E03.Refinement",
+    "V7.Proofs.Stage1E03.Shapes",
+    "V7.Proofs.Stage1E03.Correctness",
+    "V7.Proofs.Stage1E03.Semantics",
+    "V7.Proofs.Stage1E03.AnalyticBridge",
+    "V7.Proofs.Stage1E03.Certificate",
+    "V7.Proofs.Stage1E03.Proof",
+    "V7.Proofs.Stage1E03",
+    "V7.Proofs.Stage1AxiomAudit",
+    "V7.Proofs.Stage2.GuardSoundness",
+    "V7.Proofs.Stage2.Geometric",
+    "V7.Proofs.Stage2.PathShape",
+    "V7.Proofs.Stage2.Controller",
+    "V7.Proofs.Stage2Resume.Positivity",
+    "V7.Proofs.Stage2Resume.Transport",
+    "V7.Proofs.Stage2Resume.Amortization",
+    "V7.Proofs.Stage2Resume.Closure",
+    "V7.Proofs.Stage3BelowTwo.Geometry",
+    "V7.Proofs.Stage3BelowTwo.Primal",
+    "V7.Proofs.Stage3BelowTwo.Identity",
+    "V7.Proofs.Stage3BelowTwo.Dual",
+    "V7.Proofs.Stage3BelowTwoResumeS3E.GuardScaling",
+    "V7.Proofs.Stage3BelowTwoResumeS3E.Closure",
+    "V7.Proofs.Stage3BelowTwoS3F.Coefficients",
+    "V7.Proofs.Stage3BelowTwoS3F.PrimalTrajectory",
+    "V7.Proofs.Stage3BelowTwoS3F.DualTrajectory",
+    "V7.Proofs.Stage3BelowTwoS3F.Machine",
+    "V7.Proofs.Stage3BelowTwoS3F.Shapes",
+    "V7.Proofs.Stage3BelowTwoS3F.Semantics",
+    "V7.Proofs.Stage3BelowTwoS3F.Ledger",
+    "V7.Proofs.Stage3BelowTwoS3F.Normalization",
+    "V7.Proofs.Stage3BelowTwoS3F.AnalyticBridge",
+    "V7.Proofs.Stage3BelowTwoS3F.Certificate",
+    "V7.Proofs.Stage3BelowTwoS3F.Contract",
+    "V7.Proofs.Stage3BelowTwoS3F.Bounds",
+    "V7.Proofs.Stage3BelowTwoS3F.Proof",
+    "V7.Proofs.Stage3BelowTwoS3F.Closure",
+    "V7.Proofs.Stage4AboveTwo.Geometry",
+    "V7.Proofs.Stage4AboveTwo.Constants",
+    "V7.Proofs.Stage4AboveTwo.WeightBalance",
+    "V7.Proofs.Stage4AboveTwo.Identity",
+    "V7.Proofs.Stage4AboveTwo.PrimalResidual",
+    "V7.Proofs.Stage4AboveTwo.PartialClosure",
+    "V7.Proofs.Stage4AboveTwoPrimalRepair.PrimalEnergy",
+    "V7.Proofs.Stage4AboveTwoPrimalRepair.Closure",
+    "V7.Proofs.Stage4AboveTwoDualPhase.DualEnergy",
+    "V7.Proofs.Stage4AboveTwoDualPhase.PhaseBounds",
+    "V7.Proofs.Stage4AboveTwoDualPhase.AnalyticPrefix",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Coefficients",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Trajectory",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Machine",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Shapes",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Semantics",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Ledger",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Contract",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.AnalyticBridge",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Certificate",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Bounds",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Proof",
+    "V7.Proofs.Stage4AboveTwoFinalTrial.Closure",
+    "V7.Proofs.Stage5AboveTwoLower.LocalityBridge",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.InfimalLocality",
+    "V7.Proofs.Stage5AboveTwoLower.Parameters",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.Parameters",
+    "V7.Proofs.Stage5AboveTwoLower.KernelElementary",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelLineCalculus",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientNonzero",
+    "V7.Proofs.Stage5AboveTwoLowerS5ARepair.KernelAmbientHessian",
+    "V7.Proofs.Stage5AboveTwoLowerS5AFinalRepair.OriginFrechet",
+    "V7.Proofs.Stage5AboveTwoLowerS5AHessianContinuity.HessianContinuity",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Core",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Continuity",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.Calculus",
+    "V7.Proofs.Stage5AboveTwoLowerResume.InfimalAttainment",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PrimalOptimality",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelConvexity",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeSupport",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ConditionalSmoothness",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelHessianStructure",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelCocoercivity",
+    "V7.Proofs.Stage5AboveTwoLowerS5AGlobalC2.QuadraticBound",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.DimensionControl",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.EnvelopeDerivative",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.KernelAssembly",
+    "V7.Proofs.Stage5AboveTwoLowerResume.InfimalLocalityClosure",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Closure",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryLinearization",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryClassification",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.SymmetryEquivariance",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.Construction",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.ExactPairCompletion",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.QueryGap",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OutsideGradient",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.BaseGradient",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.OptimizerRadius",
+    "V7.Proofs.Stage5AboveTwoLowerS5A2Envelope.PhysicalLower",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixState",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PrefixSync",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.CompletionData",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.ObjectiveData",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.CompletedTrace",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalScaling",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.PhysicalAnalytic",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UnitInstance",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.RateAlgebra",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.LowerTheorem",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.LocalTrialAdapter",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperAnalytic",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTrial",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.UpperTheorem",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Optimality",
+    "V7.Proofs.Stage5AboveTwoLowerS5F.Closure",
+    "V7.Proofs.Stage6StrictDeterministic.AffineTrace",
+    "V7.Proofs.Stage6StrictDeterministic.HSelection",
+    "V7.Proofs.Stage6StrictDeterministic.ScalarHard",
+    "V7.Proofs.Stage6StrictDeterministic.HardInstance",
+    "V7.Proofs.Stage6StrictDeterministic.Indistinguishability",
+    "V7.Proofs.Stage6StrictDeterministic.Closure",
+    "V7.Proofs.Stage7StrictRandomizedExpected.MeasurableTrace",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Displacement",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Randomized",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Expected",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Transfer",
+    "V7.Proofs.Stage7StrictRandomizedExpected.Closure",
+    "V7.Proofs.Stage8Main.LocalDispatch",
+    "V7.Proofs.Stage8Main.RuntimeMachine",
+    "V7.Proofs.Stage8Main.LocalSpec",
+    "V7.Proofs.Stage8Main.Controller",
+    "V7.Proofs.Stage8Main.Refinement",
+    "V7.Proofs.Stage8Main.AnchorSplice",
+    "V7.Proofs.Stage8Main.History",
+    "V7.Proofs.Stage8Main.Accounting",
+    "V7.Proofs.Stage8Main.MainExecution",
+    "V7.Proofs.Stage8Main.Main",
+    "V7.Proofs.Stage8Main.Closure",
+    "V7.Proofs.Stage8Main.AxiomAudit",
+    "V7.Proofs.Stage8Main.WholePaperAudit"
+  ],
+  "v7_statement_and_root_module_count": 13
+}
