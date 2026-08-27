@@ -13,3 +13,11 @@ require mathlib from git
 lean_lib Certified where
   roots := #[`V7, `O3]
   globs := #[Glob.submodules `O3, Glob.andSubmodules `V7]
+
+@[default_target]
+lean_lib PalomarChallenge where
+  roots := #[`Challenge]
+
+@[default_target]
+lean_lib PalomarSolution where
+  roots := #[`Solution]

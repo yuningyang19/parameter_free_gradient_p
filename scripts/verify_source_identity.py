@@ -12,6 +12,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "audit" / "EXTRACTION_MANIFEST.json"
+PACKAGING_LEAN_FILES = {
+    "Challenge.lean",
+    "Solution.lean",
+    "palomar/AxiomAudit.lean",
+}
 
 
 def fail(message: str) -> None:
@@ -32,8 +37,12 @@ def main() -> None:
         for path in ROOT.rglob("*.lean")
         if ".lake" not in path.parts and path.name != "lakefile.lean"
     }
-    if actual != expected:
-        fail(f"Lean file set differs: missing={sorted(expected-actual)}, extra={sorted(actual-expected)}")
+    if actual != expected | PACKAGING_LEAN_FILES:
+        fail(
+            "Lean file set differs from the certified snapshot plus the exact "
+            f"packaging allowlist: missing={sorted(expected-actual)}, "
+            f"extra={sorted(actual-(expected | PACKAGING_LEAN_FILES))}"
+        )
 
     for row in rows:
         path = ROOT / row["target_path"]
