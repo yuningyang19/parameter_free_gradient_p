@@ -1,0 +1,30 @@
+name: Lean certification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  certified-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: false
+          use-github-cache: false
+          use-mathlib-cache: true
+      - name: Clean build of the pinned package
+        run: |
+          lake clean
+          lake build
+      - name: Verify certified source identity
+        run: python3 scripts/verify_source_identity.py
+      - name: Verify closure, interfaces, axioms, and escape-hatch policy
+        run: python3 scripts/verify_certification.py

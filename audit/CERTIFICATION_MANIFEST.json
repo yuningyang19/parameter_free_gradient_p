@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "certification_boundary": "frozen R2/R2C1 mathematical Lean proof surface only",
+  "mathematical_certification_commit": "eb1b55d448496dca56a87001e4d792c483e057ce",
+  "source_release_verification_commit": "68a9994277a4fbc671d5c61f4a00b902f4b73871",
+  "target_certified_source_snapshot_commit": "f5094d1ab0cf53c2a56067604513a6bfbea26086",
+  "target_public_package_commit": "SELF",
+  "target_public_package_commit_resolution": "Run git rev-parse HEAD on this commit. A Git commit cannot contain its own object ID without changing that ID.",
+  "named_results": 22,
+  "theorem_strength_interfaces": 63,
+  "accepted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "negative_sentinels": 9,
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lake_manifest_sha256": "9959e4c5bd2cd7bf821e77e95ee0888ccab726781e9857f5849bb4775d8c7088",
+  "authoritative_trial_outcome_carrier_sha256": "70eae257d1d1e1603cdc69e7167cc183b6d91ff8b23c5a427e027510d58127",
+  "certified_exports": [
+    "V7.scaleIdentificationImpossibility",
+    "V7.knownParameterAboveTwoOptimality",
+    "V7.main",
+    "V7.anchor",
+    "V7.trialOutcomeCertification",
+    "V7.belowTrial",
+    "V7.belowGeometry",
+    "V7.belowPrimal",
+    "V7.belowPointwiseResidualIdentity",
+    "V7.belowTerminalGradient",
+    "V7.belowGuardScaling",
+    "V7.euclideanGap",
+    "V7.finiteDataOGMG",
+    "V7.euclideanTrial",
+    "V7.abovePointwiseResidualIdentity",
+    "V7.aboveTrial",
+    "V7.aboveLowerExactPairCompletion",
+    "V7.aboveLowerQueryGap",
+    "V7.aboveLowerOutsideGradient",
+    "V7.aboveLowerBaseGradient",
+    "V7.aboveLowerOptimizerRadius",
+    "V7.geometricTrialAmortization"
+  ],
+  "excluded_claims": [
+    "manuscript prose",
+    "citations and attribution",
+    "novelty",
+    "empirical claims outside the carriers",
+    "publication suitability"
+  ]
+}
