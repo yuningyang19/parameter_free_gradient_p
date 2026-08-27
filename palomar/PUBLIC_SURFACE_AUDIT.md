@@ -49,8 +49,9 @@ three frozen source theorem blocks relative to mathematical authority
 
 The challenge statement closure was obtained by expanding the environment
 dependencies of the three certified carriers. It needs 134 local declarations
-from the O3/V7 statement layer. The resulting root challenge has 555 lines and
-25,833 bytes, below Palomar's 1,000-line and 100-KiB limits.
+from the O3/V7 statement layer. The resulting root challenge remains below
+Palomar's 1,000-line and 100-KiB limits; the exact current counts are reported
+by `scripts/verify_palomar.py`.
 
 It is above Palomar's 300-line warning threshold. This warning is documented
 rather than hidden: the file keeps the transparent carrier closure and exact
@@ -63,8 +64,11 @@ For all three rows: `MANUSCRIPT_STATEMENT_MATCH = PASS`,
 ## Leakage boundary
 
 - `Challenge.lean` imports exactly `Mathlib` and no local O3/V7 proof module.
-- It declares exactly the three public theorems and has exactly three expected
-  `sorry` placeholders.
+- It exposes exactly three Comparator-selected theorem holes and has exactly
+  three expected `sorry` placeholders. Six proof-complete auxiliary theorems
+  reproduce source-generated numeral-instance constants required by
+  Comparator's transitive declaration-closure comparison; none is a public
+  hole or a configured headline result.
 - `Solution.lean` has no `sorry`, `admit`, new `axiom`, `unsafe`, or
   `native_decide`; it imports only the three frozen proof closures.
 - `comparator.json` selects exactly the three public theorem names and permits
@@ -86,3 +90,22 @@ is public and GitHub detects the canonical root `LICENSE` as Apache-2.0, matchin
 `formalization.yaml`. These facts make the package eligible for official
 submission; they do not themselves claim an official Comparator/NanoDa pass,
 editorial clearance, registration, novelty, or endorsement.
+
+## Official Comparator closure correction
+
+The first official Palomar mechanical run for companion commit
+`668cc312ff917d9cb897195e60fc0c5bc59530df` built the full project and exported
+all three solutions, then rejected the declaration closure at
+`V7.CurrentMainRate`. The source declarations were compiled in separate Lean
+modules, whereas the Mathlib-only challenge must be one trusted file. Lean's
+instance cache therefore attached extensionally equal numeral proofs to
+different generated constant names.
+
+The correction does not change `O3/`, `V7/`, `V7.lean`, a carrier proposition,
+or `comparator.json`. It recreates the six source-generated auxiliary theorem
+constants and binds them locally while elaborating the copied carriers. The
+pinned Comparator revision
+`575674928e239f5bc452aab72d1dd7b0f1326494`, with toolchain-matched
+`lean4export` revision `15f6055e299ad5b89345e533cc2192f4cc00f659`, then reports an exact local
+declaration-closure match. This local result is a pre-submission check, not a
+claim that a replacement official Palomar run has already passed.

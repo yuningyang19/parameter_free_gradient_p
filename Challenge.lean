@@ -362,6 +362,13 @@ def StrictRunConsistent (method : StrictLocalMethod) (oracle : PairOracle 1)
     (trace.get ⟨t, ht⟩).point =
       if t = 0 then method.x0 else method.nextQuery (trace.take t)
 
+-- Preserve the source module's generated numeral-instance auxiliary exactly.
+theorem DeterministicFiniteHorizonImpossibilityStatement._proof_1 :
+    @NeZero Nat (@Zero.ofOfNat0 Nat (instOfNatNat _)) (0 + 1) :=
+  Nat.instNeZeroSucc
+
+attribute [local instance] DeterministicFiniteHorizonImpossibilityStatement._proof_1
+
 /-- Deterministic finite-horizon impossibility at fixed normalized condition. -/
 noncomputable def DeterministicFiniteHorizonImpossibilityStatement : Prop :=
   ∀ (p eps : ℝ), 1 < p → 0 < eps →
@@ -455,6 +462,25 @@ def ChargedKnownParameterRun (algorithm : DeterministicExactPairAlgorithm d)
   GeneratedBy algorithm x0 trace ∧ TraceExact oracle trace ∧
   trace ≠ [] ∧ (trace.head?.map O3.Observation.point) = some x0
 
+-- Preserve the generated auxiliaries reused by the source lower-bound module.
+theorem SmoothingKernelAssumptions._proof_1 : (1 + 1).AtLeastTwo :=
+  @Nat.instAtLeastTwoHAddOfNat 1 (@Nat.instNeZeroSucc 0)
+
+theorem SmoothingKernelConstructionStatement._proof_1 : (2 + 1).AtLeastTwo :=
+  Nat.instAtLeastTwoHAddOfNat 2
+
+theorem SmoothingKernelConstructionStatement._proof_3 : (4 + 1).AtLeastTwo :=
+  Nat.instAtLeastTwoHAddOfNat 4
+
+theorem SmoothingKernelConstructionStatement._proof_4 : (14 + 1).AtLeastTwo :=
+  Nat.instAtLeastTwoHAddOfNat 14
+
+attribute [local instance]
+  SmoothingKernelAssumptions._proof_1
+  SmoothingKernelConstructionStatement._proof_1
+  SmoothingKernelConstructionStatement._proof_3
+  SmoothingKernelConstructionStatement._proof_4
+
 /-- The current known-parameter upper bound for every fixed finite `p > 2`. -/
 noncomputable def KnownParameterAboveTwoUpperStatement : Prop :=
   ∀ (p : ℝ), 2 < p → ∃ Cp : ℝ, 0 < Cp ∧
@@ -510,6 +536,12 @@ noncomputable def KnownParameterAboveTwoOptimalityStatement : Prop :=
   KnownParameterAboveTwoUpperStatement ∧ KnownParameterAboveTwoLowerStatement
 
 /-- The three-regime post-initialization oracle-count expression. -/
+-- Preserve the source main-statement module's generated numeral auxiliary.
+theorem CurrentMainRate._proof_1 : (1 + 1).AtLeastTwo :=
+  @Nat.instAtLeastTwoHAddOfNat 1 (@Nat.instNeZeroSucc 0)
+
+attribute [local instance] CurrentMainRate._proof_1
+
 noncomputable def CurrentMainRate (p Cp C Kbar L M0 : ℝ) : ℝ :=
   if p < 2 then
     Cp * Kbar ^ (1 / 2 : ℝ) + Cp * Real.log (Real.exp 1 + L / M0)

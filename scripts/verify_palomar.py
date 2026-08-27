@@ -25,6 +25,14 @@ THEOREMS = [
     "V7.knownParameterAboveTwoOptimality",
     "V7.main",
 ]
+CHALLENGE_AUXILIARIES = [
+    "DeterministicFiniteHorizonImpossibilityStatement._proof_1",
+    "SmoothingKernelAssumptions._proof_1",
+    "SmoothingKernelConstructionStatement._proof_1",
+    "SmoothingKernelConstructionStatement._proof_3",
+    "SmoothingKernelConstructionStatement._proof_4",
+    "CurrentMainRate._proof_1",
+]
 SOLUTION_IMPORTS = [
     "V7.Proofs.Stage5AboveTwoLowerS5F.Closure",
     "V7.Proofs.Stage7StrictRandomizedExpected.Closure",
@@ -232,8 +240,8 @@ def main() -> None:
     if imports(challenge_clean) != ["Mathlib"]:
         fail("Challenge.lean must import exactly Mathlib and no local proof module")
 
-    expected_short = [name.rsplit(".", 1)[1] for name in THEOREMS]
-    declared = re.findall(r"^\s*theorem\s+([A-Za-z0-9_']+)\s*:", challenge_clean, re.MULTILINE)
+    expected_short = [*CHALLENGE_AUXILIARIES, *[name.rsplit(".", 1)[1] for name in THEOREMS]]
+    declared = re.findall(r"^\s*theorem\s+([A-Za-z0-9_'.]+)\s*:", challenge_clean, re.MULTILINE)
     if declared != expected_short:
         fail(f"Challenge theorem declarations differ: {declared}")
     if len(token_hits(challenge_clean, "sorry")) != 3:
