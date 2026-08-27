@@ -10,6 +10,35 @@
 - Companion certified release before this packaging layer:
   `0a673d5c6efeefb4fdae872b7f829db1b692f3bb`.
 
+## Current policy binding
+
+Retrieved on 2026-08-27:
+
+- Palomar policy: `d5a647db3757303b1d928cfae4d3d232eed3e79e`;
+- Palomar template: `128a6c5ce5f48622e69927ccd639cbff401022e8`;
+- `formalization.yaml` schema repository:
+  `99c678e569c7c4c0772db297c5ddd5e4c9b6322e` (schema v0.4);
+- Comparator documentation: `8d84e678dc9954b12db91f7f3167a169b309e0c8`;
+- Palomar submission taxonomy/toolchain snapshot:
+  `e215b184d1b659e8e3e641162a7d63708678016f`.
+
+The checked classifications are `math.OC` (Optimization and Control) and
+`90C25` (Convex programming). The project uses Lean v4.33.0, above the current
+Palomar minimum v4.28.0.
+
+## Manuscript-tip reconciliation
+
+The current manuscript branch tip
+`4b6d77604d22fc91f86f67927d75d04ef7ce796c` changes no byte in any of the
+three frozen source theorem blocks relative to mathematical authority
+`68483ace24e4e6e6094f6116fd5f4214f6676d7f`:
+
+| Source block | SHA-256 at both commits | Status |
+| --- | --- | --- |
+| `thm:impossibility` | `090644381fcf72892f6a7863d9cd395b76bc291aaf19e6055138e71c983a1eb6` | PASS |
+| `prop:pgtwo-optimality` | `0f49f7e5509543bc845dbb20b2faef8007e23ea67be0cdd0dd5237f368ddb4b4` | PASS |
+| `thm:main` | `64f4915387c574bac2ced58e0b2d0b45077583657dfee06702315348f828c056` | PASS |
+
 ## Three-way correspondence
 
 | Public declaration | Manuscript label | Certified Lean carrier | Existing proof closure | Exact type, no rewrite | Axioms | Status |
@@ -22,6 +51,10 @@ The challenge statement closure was obtained by expanding the environment
 dependencies of the three certified carriers. It needs 134 local declarations
 from the O3/V7 statement layer. The resulting root challenge has 555 lines and
 25,833 bytes, below Palomar's 1,000-line and 100-KiB limits.
+
+It is above Palomar's 300-line warning threshold. This warning is documented
+rather than hidden: the file keeps the transparent carrier closure and exact
+types, and no compression by opaque wrappers or semantic rewriting is used.
 
 For all three rows: `MANUSCRIPT_STATEMENT_MATCH = PASS`,
 `LEAN_EXPORT_MATCH = PASS`, `NO_SEMANTIC_WIDENING = PASS`, and
@@ -48,7 +81,8 @@ files against the frozen source manifest.
 ## Registry boundary
 
 The local audit establishes the challenge shape, elaboration, leakage policy,
-solution elaboration, and axiom set. It does not claim an official Palomar
-comparator run. At the time of packaging, registry submission remains blocked
-because the GitHub repository is private and no root license has been selected.
-Consequently `formalization.yaml` is deliberately not fabricated.
+solution elaboration, metadata/licence agreement, and axiom set. The repository
+is public and GitHub detects the canonical root `LICENSE` as Apache-2.0, matching
+`formalization.yaml`. These facts make the package eligible for official
+submission; they do not themselves claim an official Comparator/NanoDa pass,
+editorial clearance, registration, novelty, or endorsement.

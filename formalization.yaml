@@ -1,0 +1,148 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/99c678e569c7c4c0772db297c5ddd5e4c9b6322e/schema/v0.4.schema.json
+version: "v0.4"
+
+project:
+  name: "Parameter-Free Gradient Minimization in l_p Geometry"
+  description: >-
+    A Lean 4 formalization of three results about exact value-gradient oracle
+    complexity in finite-dimensional l_p geometry: strict-local
+    scale-identification impossibility at fixed LR/epsilon = 4, the
+    known-parameter p > 2 upper/lower exponent p/(p+2) with its stated
+    horizon and dimension qualifications, and a post-secant-initialization
+    parameter-free runtime family with the three p regimes. The Comparator
+    surface contains exactly these three declarations; the other certified
+    results remain supporting proof infrastructure.
+  authors:
+    - "Yuning Yang"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Yuning Yang"
+
+classification:
+  arxiv: ["math.OC"]
+  msc2020: ["90C25"]
+
+sources:
+  - title: "Optimal Parameter-Free Gradient Minimization in l_p Geometry"
+    authors:
+      - "Shuting Yang"
+      - "Yuning Yang"
+    id: "https://github.com/yuningyang19/parameter_free_gradient/blob/68483ace24e4e6e6094f6116fd5f4214f6676d7f/paper/manuscript_v7/main.tex"
+    type: "paper"
+    location: "thm:impossibility, prop:pgtwo-optimality, and thm:main at commit 68483ace24e4e6e6094f6116fd5f4214f6676d7f"
+    relationship: "formalizes"
+    note: >-
+      The source manuscript repository is not part of this public submission.
+      The three source blocks are bound by SHA-256 in
+      palomar/PUBLIC_SURFACE_AUDIT.md. At the current manuscript branch tip
+      4b6d77604d22fc91f86f67927d75d04ef7ce796c those three block hashes are
+      unchanged from the cited mathematical authority.
+    license: "No public licence declared"
+    author_endorsement: "participated"
+
+status:
+  scope: >-
+    The submitted Comparator configuration records exactly three public
+    declarations. Their proofs lie in a byte-identical 190-file extraction of
+    the certified source closure. The wider package audits 22 named results and
+    63 theorem-strength interfaces, but the other 19 named results are not
+    Palomar headline declarations. Deliberate placeholders occur only in
+    Challenge.lean and are excluded from the proof-development sorry counts.
+    This certification does not cover manuscript prose, citations,
+    attribution, novelty, empirical claims, external peer review, or
+    publication suitability.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+    - "propext"
+    - "Classical.choice"
+    - "Quot.sound"
+  main_results:
+    - declaration: "V7.scaleIdentificationImpossibility"
+      file: "V7/Proofs/Stage7StrictRandomizedExpected/Closure.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+    - declaration: "V7.knownParameterAboveTwoOptimality"
+      file: "V7/Proofs/Stage5AboveTwoLowerS5F/Optimality.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+    - declaration: "V7.main"
+      file: "V7/Proofs/Stage8Main/Main.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["ChatGPT 5.6"]
+      framework: "Codex"
+      tool_setup: >-
+        Agent-assisted proof exploration, Lean engineering, source-closure
+        extraction, release audits, and registry packaging, with scripted
+        source-identity, coverage, proof-hole, and axiom checks.
+      cost:
+        wall_time: "Not reconstructed across the staged development"
+        spend_usd: "Not tracked"
+        hardware: "Local macOS host and GitHub-hosted Ubuntu runners"
+      prompting_notes: >-
+        Gate-driven task specifications froze theorem carriers, quantified
+        interfaces, source provenance, and stop conditions before release work.
+    - method: "manual"
+      models: []
+      framework: "n/a"
+      tool_setup: "Author review of the mathematical statements, proofs, and release boundary"
+      cost:
+        wall_time: "Not separately tracked"
+        spend_usd: "Not tracked"
+        hardware: "Local workstation"
+      prompting_notes: "n/a"
+  spend_usd: "Not tracked"
+  notes: >-
+    AI assistance did not replace kernel checking or author responsibility.
+    Release evidence includes cold and fresh-clone builds, exact source hashes,
+    proof-closure coverage, and declaration-level axiom audits.
+
+fidelity:
+  divergences: >-
+    No statement divergence is known for the three registered declarations.
+    The current manuscript blocks, frozen Lean carriers, Challenge theorem
+    types, Solution exports, and Comparator names are bound explicitly. The
+    formal certification is narrower than the manuscript as a whole and makes
+    no claim about prose, citations, attribution, or novelty.
+
+review:
+  status: "author-verified"
+  reviewers:
+    - "Shuting Yang"
+    - "Yuning Yang"
+  notes: >-
+    The authors independently reviewed the mathematical content. The release
+    additionally passed cold/fresh-clone Lean builds, 190-file source identity,
+    22-result and 63-interface coverage, proof-hole scans, and axiom audits.
+    This is not a claim of external peer review.
+
+alignment:
+  namespace: "V7"
+  statements:
+    - source: "thm:impossibility"
+      lean: "V7.scaleIdentificationImpossibility"
+      module: "V7.Proofs.Stage7StrictRandomizedExpected.Closure"
+      status: "proved"
+      note: "Exact frozen carrier type; no semantic rewrite in Challenge.lean."
+    - source: "prop:pgtwo-optimality"
+      lean: "V7.knownParameterAboveTwoOptimality"
+      module: "V7.Proofs.Stage5AboveTwoLowerS5F.Optimality"
+      status: "proved"
+      note: "Exact upper/lower conjunction, including horizon and dimension qualifications."
+    - source: "thm:main"
+      lean: "V7.main"
+      module: "V7.Proofs.Stage8Main.Main"
+      status: "proved"
+      note: "Exact post-initialization runtime carrier with the three p regimes."
+
+acknowledgements: >-
+  Lean 4, Mathlib, leanprover/comparator, NanoDa, the Palomar policy and
+  template authors, and Codex-assisted development and audit tooling.

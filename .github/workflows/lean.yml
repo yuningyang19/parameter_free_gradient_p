@@ -7,13 +7,18 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   certified-build:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           fetch-depth: 0
+          persist-credentials: false
       - name: Free hosted-runner disk for the cold Lean build
         run: |
           # The certified build needs more space than a stock ubuntu-latest
@@ -25,7 +30,12 @@ jobs:
             /opt/ghc \
             /usr/local/.ghcup
           df -h /
-      - uses: leanprover/lean-action@v1
+      - uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b
+        with:
+          ruby-version: "3.3.12"
+      - name: Validate Palomar metadata
+        run: ruby scripts/validate-formalization.rb
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
         with:
           auto-config: false
           build: false
